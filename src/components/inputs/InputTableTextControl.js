@@ -23,6 +23,7 @@ const InputTableTextControl = styled(
                         value={value}
                         error={invalid}
                         helperText={error?.message || " "}
+                        autoComplete="off"
                         InputLabelProps={{
                             style: {
                                 color: "#CCCCCC",
@@ -38,7 +39,6 @@ const InputTableTextControl = styled(
                                     ? NumberFormatterLeadingZeros
                                     : NumberFormatter
                                 : null,
-                            // autoComplete: "off",
                         }}
                         FormHelperTextProps={{
                             className: "mt-0",
