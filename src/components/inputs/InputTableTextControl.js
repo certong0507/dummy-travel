@@ -23,7 +23,7 @@ const InputTableTextControl = styled(
                         value={value}
                         error={invalid}
                         helperText={error?.message || " "}
-                        autoComplete="off"
+                        autoComplete="no"
                         InputLabelProps={{
                             style: {
                                 color: "#CCCCCC",
@@ -43,7 +43,6 @@ const InputTableTextControl = styled(
                         FormHelperTextProps={{
                             className: "mt-0",
                         }}
-                        multiline
                         {...props}
                     />
                 )}
