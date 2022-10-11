@@ -30,10 +30,6 @@ const Login = () => {
                     <ViewTablet />
                 </TabletView>
 
-                <MobileLandscapeView>
-                    <ViewMobileLandscape />
-                </MobileLandscapeView>
-
                 <MobilePortraitView>
                     <ViewMobilePortrait />
                 </MobilePortraitView>
