@@ -64,10 +64,10 @@ export const DefaultView = ({ children }) => {
 }
 
 export const MobilePortraitView = ({ children }) => {
-    const { isPortrait } = useMobileOrientation()
+    // const { isPortrait } = useMobileOrientation()
     const isMobile = useMediaQuery({ maxWidth: 767 })
     // const isPortrait = useMediaQuery({ query: "(orientation: portrait)" })
-    // const isPortrait = useMediaQuery({ orientation: "portrait" })
+    const isPortrait = useMediaQuery({ orientation: "portrait" })
 
     console.log("[MobilePortraitView]", "[isPortrait]" , isPortrait, "[isMobile]", isMobile)
     return isMobile ? children : null
