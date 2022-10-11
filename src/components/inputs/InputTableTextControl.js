@@ -23,26 +23,23 @@ const InputTableTextControl = styled(
                         value={value}
                         error={invalid}
                         helperText={error?.message || " "}
-                        autoComplete="no"
                         InputLabelProps={{
                             style: {
                                 color: "#CCCCCC",
                             },
                         }}
                         InputProps={{
-                            autoComplete: "off",
-                            form: {
-                                autocomplete: "off",
-                            },
                             inputComponent: number
                                 ? leadingZeros
                                     ? NumberFormatterLeadingZeros
                                     : NumberFormatter
                                 : null,
+                            // autoComplete: "off",
                         }}
                         FormHelperTextProps={{
                             className: "mt-0",
                         }}
+                        multiline
                         {...props}
                     />
                 )}
