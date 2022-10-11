@@ -11,7 +11,7 @@ import Schema from "src/pages/login/components/schema/Schema"
 import InputTableTextControl from "src/components/inputs/InputTableTextControl"
 import { doLogin, doResetLoginState, doGetLoggedInUser } from "src/action/api_actions"
 
-const LoginForm = ({
+export const LoginForm = ({
     loginSuccess,
     loginFail,
     loginErrorMessage,
