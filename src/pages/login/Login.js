@@ -1,5 +1,5 @@
 import React from "react"
-import { GoogleOAuthProvider } from '@react-oauth/google'
+import { GoogleOAuthProvider } from "@react-oauth/google"
 
 import {
     DesktopView,
@@ -24,15 +24,15 @@ const Login = () => {
             <GoogleOAuthProvider clientId={clientId}>
                 {/* <DesktopView>
                     <ViewsDesktop />
-                </DesktopView>
+                </DesktopView>*/}
 
                 <TabletView>
                     <ViewTablet />
-                </TabletView>*/}
+                </TabletView>
 
-                <MobileLandscapeView>
+                {/* <MobileLandscapeView>
                     <ViewMobileLandscape />
-                </MobileLandscapeView> 
+                </MobileLandscapeView> */}
 
                 <MobilePortraitView>
                     <ViewMobilePortrait />
