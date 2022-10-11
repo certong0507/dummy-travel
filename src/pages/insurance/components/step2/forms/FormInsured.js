@@ -114,7 +114,7 @@ export default function FormInsured({
             className="mb-4"
             style={{
                 backgroundColor: "rgb(237, 247, 237)",
-                // width: isDesktop ? "100%" : "1200px",
+                width: isDesktop ? "100%" : "1200px",
             }}
         >
             <CCardBody>
@@ -176,6 +176,7 @@ export default function FormInsured({
                 >
                     <Grid item xs={5} sm={5} md={5}>
                         <InputTableTextControl
+                            defaultValue=""
                             control={control}
                             name={`${name}.${indexInsured}.insuredFullName`}
                             label="Full Name"
@@ -194,6 +195,7 @@ export default function FormInsured({
 
                     <Grid item xs={3} sm={3} md={3}>
                         <InputTableTextControl
+                            defaultValue=""
                             leadingZeros
                             number={isNumber}
                             control={control}
@@ -229,6 +231,7 @@ export default function FormInsured({
 
                     <Grid item xs={2} sm={2} md={2}>
                         <InputTableTextControl
+                            defaultValue=""
                             control={control}
                             name={`${name}.${indexInsured}.insuredMobileNo`}
                             label="Mobile No"
@@ -239,6 +242,7 @@ export default function FormInsured({
 
                     <Grid item xs={3} sm={3} md={3}>
                         <InputTableTextControl
+                            defaultValue=""
                             control={control}
                             name={`${name}.${indexInsured}.insuredOccupation`}
                             label="Occupation"
@@ -247,6 +251,7 @@ export default function FormInsured({
 
                     <Grid item xs={5} sm={5} md={5}>
                         <InputTableTextControl
+                            defaultValue=""
                             control={control}
                             name={`${name}.${indexInsured}.insuredAddress`}
                             label="Address"
