@@ -70,7 +70,7 @@ export const MobilePortraitView = ({ children }) => {
     // const isPortrait = useMediaQuery({ orientation: "portrait" })
 
     console.log("[MobilePortraitView]", "[isPortrait]" , isPortrait, "[isMobile]", isMobile)
-    return isPortrait ? children : null
+    return isMobile ? children : null
 }
 
 export const MobileLandscapeView = ({ children }) => {
