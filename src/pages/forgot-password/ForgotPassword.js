@@ -16,13 +16,9 @@ import Footer from "src/components/footer/copyright"
 import Schema from "src/pages/forgot-password/components/schema/Schema"
 import InputTableTextControl from "src/components/inputs/InputTableTextControl"
 import { doForgotPassword, resetForgotPasswordState } from "src/action/api_actions"
+import LoginForm from "src/pages/login/components/forms/LoginForm"
 
-export const ForgotPassword = ({
-    resetForgotPasswordState,
-    doForgotPassword,
-    success,
-    fail,
-}) => {
+export const ForgotPassword = ({ resetForgotPasswordState, doForgotPassword, success, fail }) => {
     const navigate = useNavigate()
     const { control, getValues, trigger } = useForm({
         defaultValues: {
@@ -89,8 +85,9 @@ export const ForgotPassword = ({
                         </p>
 
                         <div className="text-center">
+                            <LoginForm />
+
                             <InputTableTextControl control={control} name="email" label="Email" />
-                            <InputTableTextControl control={control} name="email2" label="Email2" />
 
                             {success && (
                                 <Box>
