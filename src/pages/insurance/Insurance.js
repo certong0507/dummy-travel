@@ -3,7 +3,7 @@ import { connect } from "react-redux"
 import { CContainer } from "@coreui/react"
 import jwt_decode from "jwt-decode"
 import { useSearchParams, useLocation } from "react-router-dom"
-import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
+import { BrowserView, MobileView, isBrowser, isMobile } from "react-device-detect"
 
 import {
     doGetInsurance,
@@ -54,7 +54,7 @@ export const Insurance = ({
     }, [])
 
     useEffect(() => {
-        if(location?.state?.fromProducts) {
+        if (location?.state?.fromProducts) {
             setActiveStep(1)
         }
     }, [location])
@@ -116,23 +116,25 @@ export const Insurance = ({
         <div className="page-body">
             <Header />
 
-            {/* <DesktopView>
+            <DesktopView>
+                {alert("DesktopView")}
                 <StepperHorizontal
                     id="desktop-insurance-horizontal-stepper"
                     activeStep={activeStep}
                     steps={steps}
                     showStepContent={showStepContent}
                 />
-            </DesktopView> */}
+            </DesktopView>
 
-            {/* <TabletView>
-                <StepperHorizontal
+            <TabletView>
+                {alert("TabletView")}
+                {/* <StepperHorizontal
                     id="desktop-insurance-horizontal-stepper"
                     activeStep={activeStep}
                     steps={steps}
                     showStepContent={showStepContent}
-                />
-            </TabletView> */}
+                /> */}
+            </TabletView>
 
             <MobilePortraitView>
                 <h6>MobilePortraitView 2</h6>
@@ -144,14 +146,15 @@ export const Insurance = ({
                 />
             </MobilePortraitView>
 
-            {/* <MobileLandscapeView>
-                <StepperHorizontal
+            <MobileLandscapeView>
+                {alert("MobileLandscapeView")}
+                {/* <StepperHorizontal
                     id="desktop-insurance-horizontal-stepper"
                     activeStep={activeStep}
                     steps={steps}
                     showStepContent={showStepContent}
-                />
-            </MobileLandscapeView> */}
+                /> */}
+            </MobileLandscapeView>
 
             {/* <Footer /> */}
         </div>
