@@ -9,7 +9,7 @@ export default function ViewMobilePortrait() {
     return (
         <Box
             sx={{
-                height: "500px",
+                height: "100%",
                 backgroundColor: "rgb(237, 247, 237)",
             }}
         >
