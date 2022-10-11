@@ -64,9 +64,10 @@ export const DefaultView = ({ children }) => {
 
 export const MobilePortraitView = ({ children }) => {
     const isMobile = useMediaQuery({ maxWidth: 767 })
-    const isPortrait = useMediaQuery({ query: "(orientation: portrait)" })
+    // const isPortrait = useMediaQuery({ query: "(orientation: portrait)" })
+    const isPortrait = useMediaQuery({ orientation: "portrait" })
 
-    return isMobile && isPortrait ? children : null
+    return isMobile ? children : null
 }
 
 export const MobileLandscapeView = ({ children }) => {

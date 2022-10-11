@@ -9,13 +9,13 @@ export default function ViewMobilePortrait() {
     return (
         <Box
             sx={{
-                height: "100%",
+                height: "500px",
                 backgroundColor: "rgb(237, 247, 237)",
             }}
         >
             <Grid container columns={{ xs: 1, sm: 6, md: 6, lg: 12 }} sx={{ height: "inherit" }}>
                 <Grid item xs={1} sm={3} md={3} lg={6} className="m-auto">
-                    {/* <SectionLeft isMobile /> */}
+                    <SectionLeft isMobile />
                 </Grid>
 
                 <Grid item xs={1} sm={3} md={3} lg={6} className="m-auto">
