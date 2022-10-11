@@ -35,6 +35,7 @@ const Login = () => {
                 </MobileLandscapeView>
 
                 <MobilePortraitView>
+                    <h6>ViewMobilePortrait</h6>
                     <ViewMobilePortrait />
                 </MobilePortraitView>
             </GoogleOAuthProvider>
