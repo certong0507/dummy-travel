@@ -72,12 +72,12 @@ const LoginForm = ({
         <Box>
             <InputTableTextControl control={control} name="email" label="Email" />
 
-            <InputTableTextControl
+            {/* <InputTableTextControl
                 control={control}
                 name="password"
                 label="Password"
                 type="password"
-            />
+            /> */}
 
             <div className="d-flex justify-content-start">
                 <Typography variant="subtitle2" color="error">

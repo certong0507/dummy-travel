@@ -90,6 +90,7 @@ export const ForgotPassword = ({
 
                         <div className="text-center">
                             <InputTableTextControl control={control} name="email" label="Email" />
+                            <InputTableTextControl control={control} name="email2" label="Email2" />
 
                             {success && (
                                 <Box>
