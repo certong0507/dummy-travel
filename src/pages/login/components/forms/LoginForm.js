@@ -82,11 +82,11 @@ const LoginForm = ({
                 type="password"
             /> */}
 
-            <div className="d-flex justify-content-start">
+            {/* <div className="d-flex justify-content-start">
                 <Typography variant="subtitle2" color="error">
                     {errorMessage}
                 </Typography>
-            </div>
+            </div> */}
 
             <Button
                 fullWidth
