@@ -76,7 +76,7 @@ export const SectionRight = ({ isDesktop, isTablet, isMobile, doLogin }) => {
     }
 
     return (
-        <Card variant="outlined" className={`${responsiveWidth()} m-auto p-3 mb-5`}>
+        <Card variant="outlined" className={`w-80 m-auto p-3 mb-5`}>
             <CardContent className="pb-0">
                 <Typography variant="subtitle1" className="mb-3" sx={{ fontSize: "20px" }}>
                     Log In
@@ -84,7 +84,7 @@ export const SectionRight = ({ isDesktop, isTablet, isMobile, doLogin }) => {
 
                 <LoginForm />
 
-                {/* <Typography
+                <Typography
                     variant="caption"
                     color="#009c99"
                     className="mt-1 cursor-pointer d-flex justify-content-end"
@@ -173,7 +173,7 @@ export const SectionRight = ({ isDesktop, isTablet, isMobile, doLogin }) => {
                             </Typography>
                         </Link>
                     </Typography>
-                </Box> */}
+                </Box>
             </CardContent>
         </Card>
     )
