@@ -22,7 +22,7 @@ const Login = () => {
             <Header />
 
             <GoogleOAuthProvider clientId={clientId}>
-                <DesktopView>
+                {/* <DesktopView>
                     <ViewsDesktop />
                 </DesktopView>
 
@@ -32,7 +32,7 @@ const Login = () => {
 
                 <MobileLandscapeView>
                     <ViewMobileLandscape />
-                </MobileLandscapeView>
+                </MobileLandscapeView> */}
 
                 <MobilePortraitView>
                     <ViewMobilePortrait />

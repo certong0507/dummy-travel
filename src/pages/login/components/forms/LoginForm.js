@@ -24,11 +24,10 @@ export const LoginForm = ({
     const [errorMessage, setErrorMessage] = useState(null)
     const { control, handleSubmit, trigger } = useForm({
         defaultValues: {
-            foo: "",
-            // email: "",
-            // password: "",
+            email: "",
+            password: "",
         },
-        // resolver: yupResolver(Schema),
+        resolver: yupResolver(Schema),
         mode: "all",
     })
 
@@ -71,22 +70,20 @@ export const LoginForm = ({
 
     return (
         <Box>
-            <InputTableTextControl control={control} name="foo" label="Foo" />
-
-            {/* <InputTableTextControl control={control} name="email" label="Email" />
+            <InputTableTextControl control={control} name="email" label="Email" />
 
             <InputTableTextControl
                 control={control}
                 name="password"
                 label="Password"
                 type="password"
-            /> */}
+            />
 
-            {/* <div className="d-flex justify-content-start">
+            <div className="d-flex justify-content-start">
                 <Typography variant="subtitle2" color="error">
                     {errorMessage}
                 </Typography>
-            </div> */}
+            </div>
 
             <Button
                 fullWidth
