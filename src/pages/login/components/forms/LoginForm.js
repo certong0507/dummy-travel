@@ -24,15 +24,16 @@ const LoginForm = ({
     const [errorMessage, setErrorMessage] = useState(null)
     const { control, handleSubmit, trigger } = useForm({
         defaultValues: {
-            email: "",
-            password: "",
+            foo: "",
+            // email: "",
+            // password: "",
         },
-        resolver: yupResolver(Schema),
+        // resolver: yupResolver(Schema),
         mode: "all",
     })
 
     useEffect(() => {
-        // doResetLoginState()
+        doResetLoginState()
     }, [])
 
     useEffect(() => {
@@ -70,14 +71,16 @@ const LoginForm = ({
 
     return (
         <Box>
-            <InputTableTextControl control={control} name="email" label="Email" />
+            <InputTableTextControl control={control} name="foo" label="Foo" />
+
+            {/* <InputTableTextControl control={control} name="email" label="Email" />
 
             <InputTableTextControl
                 control={control}
                 name="password"
                 label="Password"
                 type="password"
-            />
+            /> */}
 
             <div className="d-flex justify-content-start">
                 <Typography variant="subtitle2" color="error">
