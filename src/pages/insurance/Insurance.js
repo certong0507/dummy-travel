@@ -116,23 +116,23 @@ export const Insurance = ({
         <div className="page-body">
             <Header />
 
-            <DesktopView>
+            {/* <DesktopView>
                 <StepperHorizontal
                     id="desktop-insurance-horizontal-stepper"
                     activeStep={activeStep}
                     steps={steps}
                     showStepContent={showStepContent}
                 />
-            </DesktopView>
+            </DesktopView> */}
 
-            <TabletView>
+            {/* <TabletView>
                 <StepperHorizontal
                     id="desktop-insurance-horizontal-stepper"
                     activeStep={activeStep}
                     steps={steps}
                     showStepContent={showStepContent}
                 />
-            </TabletView>
+            </TabletView> */}
 
             <MobilePortraitView>
                 <h6>MobilePortraitView 2</h6>
@@ -144,14 +144,14 @@ export const Insurance = ({
                 />
             </MobilePortraitView>
 
-            <MobileLandscapeView>
+            {/* <MobileLandscapeView>
                 <StepperHorizontal
                     id="desktop-insurance-horizontal-stepper"
                     activeStep={activeStep}
                     steps={steps}
                     showStepContent={showStepContent}
                 />
-            </MobileLandscapeView>
+            </MobileLandscapeView> */}
 
             {/* <Footer /> */}
         </div>
