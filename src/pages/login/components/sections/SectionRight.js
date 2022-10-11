@@ -84,7 +84,7 @@ export const SectionRight = ({ isDesktop, isTablet, isMobile, doLogin }) => {
 
                 <LoginForm />
 
-                <Typography
+                {/* <Typography
                     variant="caption"
                     color="#009c99"
                     className="mt-1 cursor-pointer d-flex justify-content-end"
@@ -173,7 +173,7 @@ export const SectionRight = ({ isDesktop, isTablet, isMobile, doLogin }) => {
                             </Typography>
                         </Link>
                     </Typography>
-                </Box>
+                </Box> */}
             </CardContent>
         </Card>
     )
