@@ -3,6 +3,7 @@ import { connect } from "react-redux"
 import { CContainer } from "@coreui/react"
 import jwt_decode from "jwt-decode"
 import { useSearchParams, useLocation } from "react-router-dom"
+import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 
 import {
     doGetInsurance,
@@ -133,14 +134,14 @@ export const Insurance = ({
                 />
             </TabletView>
 
-            <MobilePortraitView>
+            <MobileView>
                 <StepperVertical
                     id="mobile-insurance-vertical-stepper"
                     activeStep={activeStep}
                     steps={steps}
                     showStepContent={showStepContent}
                 />
-            </MobilePortraitView>
+            </MobileView>
 
             <MobileLandscapeView>
                 <StepperHorizontal
