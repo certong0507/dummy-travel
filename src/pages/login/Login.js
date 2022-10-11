@@ -22,21 +22,19 @@ const Login = () => {
             <Header />
 
             <GoogleOAuthProvider clientId={clientId}>
-                    <h2>xxxx000000</h2>
-                {/* <DesktopView>
+                <DesktopView>
                     <ViewsDesktop />
-                </DesktopView>*/}
+                </DesktopView>
 
                 <TabletView>
                     <ViewTablet />
                 </TabletView>
 
-                {/* <MobileLandscapeView>
+                <MobileLandscapeView>
                     <ViewMobileLandscape />
-                </MobileLandscapeView> */}
+                </MobileLandscapeView>
 
                 <MobilePortraitView>
-                    <h2>sssss8768586758</h2>
                     <ViewMobilePortrait />
                 </MobilePortraitView>
             </GoogleOAuthProvider>
