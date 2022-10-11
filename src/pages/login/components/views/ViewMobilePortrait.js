@@ -1,15 +1,18 @@
 import React from "react"
 import Box from "@mui/material/Box"
 import Grid from "@mui/material/Grid"
+import { useMediaQuery } from "react-responsive"
 
 import SectionLeft from "src/pages/login/components/sections/SectionLeft"
 import SectionRight from "src/pages/login/components/sections/SectionRight"
 
 export default function ViewMobilePortrait() {
+    const isLandscape = useMediaQuery({ query: "(orientation: landscape)" })
+
     return (
         <Box
             sx={{
-                height: "100%",
+                height: isLandscape ? "100%" : "100vh",
                 backgroundColor: "rgb(237, 247, 237)",
             }}
         >
