@@ -28,11 +28,11 @@ const Login = () => {
 
                 <TabletView>
                     <ViewTablet />
-                </TabletView>
+                </TabletView>*/}
 
                 <MobileLandscapeView>
                     <ViewMobileLandscape />
-                </MobileLandscapeView> */}
+                </MobileLandscapeView> 
 
                 <MobilePortraitView>
                     <ViewMobilePortrait />
