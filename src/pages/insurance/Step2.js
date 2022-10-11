@@ -96,7 +96,7 @@ export const Step2 = ({
     const [customerApplicationId, setCustomerApplicationId] = useState(null)
 
     useEffect(() => {
-        // window.scrollTo(0, 0)
+        window.scrollTo(0, 0)
 
         if (!selectedInsurance) {
             back()

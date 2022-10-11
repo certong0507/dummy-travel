@@ -10,7 +10,7 @@ export const Step4 = ({ back, paymentReturnData }) => {
     const isSurfacePro7 = useMediaQuery({ width: 912 })
 
     useEffect(() => {
-        // window.scrollTo(0, 0)
+        window.scrollTo(0, 0)
     }, [])
 
     const showContent = () => {

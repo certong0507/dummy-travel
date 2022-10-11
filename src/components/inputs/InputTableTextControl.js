@@ -29,15 +29,12 @@ const InputTableTextControl = styled(
                             },
                         }}
                         InputProps={{
-                            autoComplete: "off",
-                            form: {
-                                autocomplete: "off",
-                            },
                             inputComponent: number
                                 ? leadingZeros
                                     ? NumberFormatterLeadingZeros
                                     : NumberFormatter
                                 : null,
+                            // autoComplete: "off",
                         }}
                         FormHelperTextProps={{
                             className: "mt-0",

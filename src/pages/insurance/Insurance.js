@@ -3,7 +3,6 @@ import { connect } from "react-redux"
 import { CContainer } from "@coreui/react"
 import jwt_decode from "jwt-decode"
 import { useSearchParams, useLocation } from "react-router-dom"
-import { BrowserView, MobileView, isBrowser, isMobile } from "react-device-detect"
 
 import {
     doGetInsurance,
@@ -24,7 +23,6 @@ import {
     DesktopView,
     TabletView,
     MobilePortraitView,
-    MobileLandscapeView,
 } from "src/utils/functions"
 
 const steps = ["Package Selection", "Information", "Summary", "Payment"]
@@ -54,7 +52,7 @@ export const Insurance = ({
     }, [])
 
     useEffect(() => {
-        if (location?.state?.fromProducts) {
+        if(location?.state?.fromProducts) {
             setActiveStep(1)
         }
     }, [location])
@@ -116,15 +114,7 @@ export const Insurance = ({
         <div className="page-body">
             <Header />
 
-            {isBrowser && <h1>isBrowser</h1>}
-            {isMobile && <h1>isMobile</h1>}
-
-            <BrowserView>{<h1>BrowserView</h1>}</BrowserView>
-
-            <MobileView>{<h1>MobileView</h1>}</MobileView>
-
             <DesktopView>
-                <h1>DesktopView</h1>
                 <StepperHorizontal
                     id="desktop-insurance-horizontal-stepper"
                     activeStep={activeStep}
@@ -134,7 +124,6 @@ export const Insurance = ({
             </DesktopView>
 
             <TabletView>
-                <h1>TabletView</h1>
                 <StepperHorizontal
                     id="desktop-insurance-horizontal-stepper"
                     activeStep={activeStep}
@@ -144,7 +133,6 @@ export const Insurance = ({
             </TabletView>
 
             <MobilePortraitView>
-                <h1>MobilePortraitView</h1>
                 <StepperVertical
                     id="mobile-insurance-vertical-stepper"
                     activeStep={activeStep}

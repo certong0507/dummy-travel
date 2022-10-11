@@ -8,7 +8,6 @@ import {
 import {
     TabletView,
     DesktopView,
-    MobileLandscapeView,
     MobilePortraitView,
 } from "src/utils/functions"
 
@@ -64,24 +63,6 @@ export default function Section4() {
                     </Grid>
                 </Container>
             </DesktopView>
-
-            <MobileLandscapeView>
-                <Container className="d-flex mt-5">
-                    <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 3, sm: 3, md: 12 }}>
-
-                        {OUR_PARTNERS?.map((item, index) => (
-                            <Grid key={index} 
-                                item xs={1.5}
-                                className="align-self-center text-align-center"
-                                style={{ paddingTop: "40px" }}
-                            >
-                                <img src={item?.logo} alt="" className={item?.className} />
-                            </Grid>
-                        ))}
-
-                    </Grid>
-                </Container>
-            </MobileLandscapeView>
 
             <MobilePortraitView>
                 <Container className="d-flex mt-5">

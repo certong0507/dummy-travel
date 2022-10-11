@@ -6,7 +6,6 @@ import { useMediaQuery } from "react-responsive"
 import {
     TabletView,
     DesktopView,
-    MobileLandscapeView,
     MobilePortraitView,
 } from "src/utils/functions"
 
@@ -38,10 +37,6 @@ export const Section2 = ({}) => {
             <DesktopView>
                 <TableInsuranceComparison />
             </DesktopView>
-
-            <MobileLandscapeView>
-                <CarouselComparisonMobile />
-            </MobileLandscapeView>
 
             <MobilePortraitView>
                 <CarouselComparisonMobile />

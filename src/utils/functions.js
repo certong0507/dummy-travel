@@ -1,7 +1,6 @@
 import React from "react"
 import NumberFormat from "react-number-format"
 import { useMediaQuery } from "react-responsive"
-import { useMobileOrientation } from 'react-device-detect';
 
 export const NumberFormatterLeadingZeros = React.forwardRef(function NumberFormatCustom(
     props,
@@ -64,20 +63,7 @@ export const DefaultView = ({ children }) => {
 }
 
 export const MobilePortraitView = ({ children }) => {
-    // const { isPortrait } = useMobileOrientation()
     const isMobile = useMediaQuery({ maxWidth: 767 })
-    // const isPortrait = useMediaQuery({ query: "(orientation: portrait)" })
-    const isPortrait = useMediaQuery({ orientation: "portrait" })
 
-    console.log("[MobilePortraitView]", "[isPortrait]" , isPortrait, "[isMobile]", isMobile)
     return isMobile ? children : null
-}
-
-export const MobileLandscapeView = ({ children }) => {
-    const isMobile = useMediaQuery({ maxWidth: 767 })
-    const isLandscape = useMediaQuery({ query: "(orientation: landscape)" })
-
-    // console.log("[isMobile]", isMobile)
-    // console.log("[isLandscape]", isLandscape)
-    return isMobile && isLandscape ? children : null
 }

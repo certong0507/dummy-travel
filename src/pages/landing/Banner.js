@@ -2,7 +2,6 @@ import React from "react"
 
 import CarouselDesktop from "src/pages/landing/components/section4/carousels/CarouselDesktop"
 import CarouselMobilePortrait from "src/pages/landing/components/section4/carousels/CarouselMobilePortrait"
-import CarouselMobileLandscape from "src/pages/landing/components/section4/carousels/CarouselMobileLandscape"
 import CarouselTablet from "src/pages/landing/components/section4/carousels/CarouselTablet"
 import backgroundImageMalCentral from "src/assets/images/bannerMalCentral_1.jpeg"
 import backgroundImage from "src/assets/images/landing_plain_bg.png"
@@ -51,11 +50,6 @@ export default function Banner() {
                 styleBannerMalCentral={styleBannerMalCentral}
             />
             <CarouselMobilePortrait
-                overlayStyle={overlayStyle}
-                styleBanner={styleBanner}
-                styleBannerMalCentral={styleBannerMalCentral}
-            />
-            <CarouselMobileLandscape
                 overlayStyle={overlayStyle}
                 styleBanner={styleBanner}
                 styleBannerMalCentral={styleBannerMalCentral}

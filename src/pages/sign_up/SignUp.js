@@ -5,12 +5,10 @@ import Header from "src/components/header"
 import Footer from "src/components/footer/copyright"
 import ViewsDesktop from "src/pages/sign_up/components/views/ViewsDesktop"
 import ViewTablet from "src/pages/sign_up/components/views/ViewTablet"
-import ViewMobileLandscape from "src/pages/sign_up/components/views/ViewMobileLandscape"
 import ViewMobilePortrait from "src/pages/sign_up/components/views/ViewMobilePortrait"
 import {
     DesktopView,
     TabletView,
-    MobileLandscapeView,
     MobilePortraitView,
 } from "src/utils/functions"
 
@@ -29,10 +27,6 @@ export default function SignUp() {
                 <TabletView>
                     <ViewTablet />
                 </TabletView>
-
-                <MobileLandscapeView>
-                    <ViewMobileLandscape />
-                </MobileLandscapeView>
 
                 <MobilePortraitView>
                     <ViewMobilePortrait />
