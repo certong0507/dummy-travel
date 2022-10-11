@@ -114,7 +114,7 @@ export default function FormInsured({
             className="mb-4"
             style={{
                 backgroundColor: "rgb(237, 247, 237)",
-                width: isDesktop ? "100%" : "1200px",
+                // width: isDesktop ? "100%" : "1200px",
             }}
         >
             <CCardBody>
